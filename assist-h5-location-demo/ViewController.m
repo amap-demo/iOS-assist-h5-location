@@ -48,6 +48,9 @@ static const NSString *JavaScriptCallOCObj = @"JavaScriptCallOCObj"; //OC暴露�
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
+#pragma -mark 配置WebView
+
 //配置 WebView，让OC和JS可以互调。
 - (void)configTheJSContext {
     self.context = [self.webView valueForKeyPath:(NSString *)WebViewKeyPath];
@@ -61,6 +64,8 @@ static const NSString *JavaScriptCallOCObj = @"JavaScriptCallOCObj"; //OC暴露�
     JSValue *result = [function callWithArguments:argumentsArray];
     return result;
 }
+
+#pragma -mark 定位相关
 
 //初始化定位
 - (void)configLocationManager {
@@ -94,7 +99,7 @@ static const NSString *JavaScriptCallOCObj = @"JavaScriptCallOCObj"; //OC暴露�
     __weak typeof(self) weakSelf = self;
     [self.locationManager requestLocationWithReGeocode:NO completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
         
-        self.loadingView.hidden = YES;
+        weakSelf.loadingView.hidden = YES;
         
         if (error) {
             
@@ -107,7 +112,7 @@ static const NSString *JavaScriptCallOCObj = @"JavaScriptCallOCObj"; //OC暴露�
         
         //得到定位信息后，调用JS函数addMarker，需要两个参数，经度和纬度，组成数组传入，其他函数详见map.html
         if (location) {
-            [weakSelf letOCCallJSWithFunName:@"addMarker" andArguments:@[[NSNumber numberWithDouble:location.coordinate.longitude],[NSNumber numberWithDouble:location.coordinate.latitude]] inJSContext:self.context];
+            [weakSelf letOCCallJSWithFunName:@"addMarker" andArguments:@[[NSNumber numberWithDouble:location.coordinate.longitude],[NSNumber numberWithDouble:location.coordinate.latitude]] inJSContext:weakSelf.context];
         }
     }];
 }
