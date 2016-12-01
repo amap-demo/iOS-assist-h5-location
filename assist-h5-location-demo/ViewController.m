@@ -10,12 +10,23 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //load local html
+    NSString *htmlFilePath = [[NSBundle mainBundle] pathForResource:@"map" ofType:@"html"];
+    NSString *htmlStr = [NSString stringWithContentsOfFile:htmlFilePath encoding:NSUTF8StringEncoding error:nil];
+    [self.webView loadHTMLString:htmlStr baseURL:[NSURL URLWithString:htmlFilePath]];
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
