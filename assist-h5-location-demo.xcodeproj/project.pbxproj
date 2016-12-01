@@ -15,6 +15,8 @@
 		D96AE6451DEFBD5300E465F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6441DEFBD5300E465F9 /* Assets.xcassets */; };
 		D96AE6481DEFBD5300E465F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6461DEFBD5300E465F9 /* LaunchScreen.storyboard */; };
 		D96AE6501DEFD2CE00E465F9 /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = D96AE64F1DEFD2CE00E465F9 /* map.html */; };
+		D96AE6531DF00A9C00E465F9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */; };
+		D96AE6561DF00EF600E465F9 /* JavaScriptObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D96AE6551DF00EF600E465F9 /* JavaScriptObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		D96AE6471DEFBD5300E465F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D96AE6491DEFBD5300E465F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D96AE64F1DEFD2CE00E465F9 /* map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = map.html; sourceTree = "<group>"; };
+		D96AE6511DEFE22500E465F9 /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D96AE6541DF00EF600E465F9 /* JavaScriptObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptObj.h; sourceTree = "<group>"; };
+		D96AE6551DF00EF600E465F9 /* JavaScriptObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptObj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96AE6531DF00A9C00E465F9 /* JavaScriptCore.framework in Frameworks */,
 				5275074EA0BF8A3836CB82A7 /* libPods-assist-h5-location-demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +56,7 @@
 		AD3749BED28A5F0991E072ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */,
 				3A9735BB4BF05D56D619B263 /* libPods-assist-h5-location-demo.a */,
 			);
 			name = Frameworks;
@@ -79,6 +87,9 @@
 				D96AE63C1DEFBD5300E465F9 /* AppDelegate.m */,
 				D96AE63E1DEFBD5300E465F9 /* ViewController.h */,
 				D96AE63F1DEFBD5300E465F9 /* ViewController.m */,
+				D96AE6541DF00EF600E465F9 /* JavaScriptObj.h */,
+				D96AE6551DF00EF600E465F9 /* JavaScriptObj.m */,
+				D96AE6511DEFE22500E465F9 /* APIKey.h */,
 				D96AE64F1DEFD2CE00E465F9 /* map.html */,
 				D96AE6411DEFBD5300E465F9 /* Main.storyboard */,
 				D96AE6441DEFBD5300E465F9 /* Assets.xcassets */,
@@ -144,7 +155,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -235,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96AE6561DF00EF600E465F9 /* JavaScriptObj.m in Sources */,
 				D96AE6401DEFBD5300E465F9 /* ViewController.m in Sources */,
 				D96AE63D1DEFBD5300E465F9 /* AppDelegate.m in Sources */,
 				D96AE63A1DEFBD5300E465F9 /* main.m in Sources */,
