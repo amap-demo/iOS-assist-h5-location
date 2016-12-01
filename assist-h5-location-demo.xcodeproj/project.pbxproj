@@ -17,6 +17,10 @@
 		D96AE6501DEFD2CE00E465F9 /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = D96AE64F1DEFD2CE00E465F9 /* map.html */; };
 		D96AE6531DF00A9C00E465F9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */; };
 		D96AE6561DF00EF600E465F9 /* JavaScriptObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D96AE6551DF00EF600E465F9 /* JavaScriptObj.m */; };
+		D96AE65C1DF0391E00E465F9 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6581DF0391E00E465F9 /* icon-72.png */; };
+		D96AE65D1DF0391E00E465F9 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6591DF0391E00E465F9 /* icon-72@2x.png */; };
+		D96AE65E1DF0391E00E465F9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE65A1DF0391E00E465F9 /* icon.png */; };
+		D96AE65F1DF0391E00E465F9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE65B1DF0391E00E465F9 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		D96AE6541DF00EF600E465F9 /* JavaScriptObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptObj.h; sourceTree = "<group>"; };
 		D96AE6551DF00EF600E465F9 /* JavaScriptObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptObj.m; sourceTree = "<group>"; };
+		D96AE6581DF0391E00E465F9 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		D96AE6591DF0391E00E465F9 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		D96AE65A1DF0391E00E465F9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		D96AE65B1DF0391E00E465F9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 				D96AE6441DEFBD5300E465F9 /* Assets.xcassets */,
 				D96AE6461DEFBD5300E465F9 /* LaunchScreen.storyboard */,
 				D96AE6491DEFBD5300E465F9 /* Info.plist */,
+				D96AE6571DF0391E00E465F9 /* icon */,
 				D96AE6381DEFBD5300E465F9 /* Supporting Files */,
 			);
 			path = "assist-h5-location-demo";
@@ -106,6 +115,17 @@
 				D96AE6391DEFBD5300E465F9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D96AE6571DF0391E00E465F9 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				D96AE6581DF0391E00E465F9 /* icon-72.png */,
+				D96AE6591DF0391E00E465F9 /* icon-72@2x.png */,
+				D96AE65A1DF0391E00E465F9 /* icon.png */,
+				D96AE65B1DF0391E00E465F9 /* icon@2x.png */,
+			);
+			path = icon;
 			sourceTree = "<group>";
 		};
 		EE2BB79333425E699AB6AC42 /* Pods */ = {
@@ -184,9 +204,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96AE65C1DF0391E00E465F9 /* icon-72.png in Resources */,
+				D96AE65F1DF0391E00E465F9 /* icon@2x.png in Resources */,
+				D96AE65E1DF0391E00E465F9 /* icon.png in Resources */,
 				D96AE6481DEFBD5300E465F9 /* LaunchScreen.storyboard in Resources */,
 				D96AE6501DEFD2CE00E465F9 /* map.html in Resources */,
 				D96AE6451DEFBD5300E465F9 /* Assets.xcassets in Resources */,
+				D96AE65D1DF0391E00E465F9 /* icon-72@2x.png in Resources */,
 				D96AE6431DEFBD5300E465F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
