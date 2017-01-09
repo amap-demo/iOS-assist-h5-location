@@ -27,8 +27,7 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
-*.DS_Store
-*.workspace
+*.xcworkspace
 
 
 # CocoaPods
