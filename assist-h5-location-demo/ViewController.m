@@ -13,7 +13,7 @@
 #import "JavaScriptObj.h"
 
 static const NSString *WebViewKeyPath = @"documentView.webView.mainFrame.javaScriptContext";  //让WebView和JSContext关联
-static const NSString *JavaScriptCallOCObj = @"JavaScriptCallOCObj"; //OC暴露给JS的调用类名，例如，在JS文件中通过JavaScriptCallOCObj.functionName,调用OC中的functionName这个函数
+static const NSString *JavaScriptCallNativeObj = @"JavaScriptCallNativeObj"; //OC暴露给JS的调用类名，例如，在JS文件中通过JavaScriptCallOCObj.functionName,调用OC中的functionName这个函数
 
 
 @interface ViewController ()<AMapLocationManagerDelegate>
@@ -55,7 +55,7 @@ static const NSString *JavaScriptCallOCObj = @"JavaScriptCallOCObj"; //OC暴露�
 - (void)configTheJSContext {
     self.context = [self.webView valueForKeyPath:(NSString *)WebViewKeyPath];
     JavaScriptObj *javaScript = [[JavaScriptObj alloc] init];  //自定义一个类来管理需要被JS调用的函数
-    self.context[(NSString *)JavaScriptCallOCObj] = javaScript;
+    self.context[(NSString *)JavaScriptCallNativeObj] = javaScript;
 }
 
 //OC调用JS，传入JS的函数名，所需参数依次组成的数组

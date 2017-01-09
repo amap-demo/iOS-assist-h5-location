@@ -21,10 +21,25 @@
 		D96AE65D1DF0391E00E465F9 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6591DF0391E00E465F9 /* icon-72@2x.png */; };
 		D96AE65E1DF0391E00E465F9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE65A1DF0391E00E465F9 /* icon.png */; };
 		D96AE65F1DF0391E00E465F9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE65B1DF0391E00E465F9 /* icon@2x.png */; };
+		D971B6BF1E23318900F726EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971B6BE1E23318900F726EF /* AppDelegate.swift */; };
+		D971B6C11E23318900F726EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971B6C01E23318900F726EF /* ViewController.swift */; };
+		D971B6C41E23318900F726EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D971B6C21E23318900F726EF /* Main.storyboard */; };
+		D971B6C61E23318900F726EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D971B6C51E23318900F726EF /* Assets.xcassets */; };
+		D971B6C91E23318900F726EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D971B6C71E23318900F726EF /* LaunchScreen.storyboard */; };
+		D971B6CF1E23326200F726EF /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = D96AE64F1DEFD2CE00E465F9 /* map.html */; };
+		D971B6D01E23326200F726EF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6581DF0391E00E465F9 /* icon-72.png */; };
+		D971B6D11E23326200F726EF /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6591DF0391E00E465F9 /* icon-72@2x.png */; };
+		D971B6D21E23326200F726EF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE65A1DF0391E00E465F9 /* icon.png */; };
+		D971B6D31E23326200F726EF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE65B1DF0391E00E465F9 /* icon@2x.png */; };
+		D971B6D61E233A2C00F726EF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */; };
+		D971B6DA1E234AC500F726EF /* JavaScriptObjInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971B6D91E234AC500F726EF /* JavaScriptObjInSwift.swift */; };
+		E21863609A47466DA94304E1 /* libPods-assist-h5-location-demo-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C20E81ACFB6CFB7F7F8778 /* libPods-assist-h5-location-demo-swift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A9735BB4BF05D56D619B263 /* libPods-assist-h5-location-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-assist-h5-location-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C20E81ACFB6CFB7F7F8778 /* libPods-assist-h5-location-demo-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-assist-h5-location-demo-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A5C210EAF916852DDCB891 /* Pods-assist-h5-location-demo-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assist-h5-location-demo-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-assist-h5-location-demo-swift/Pods-assist-h5-location-demo-swift.release.xcconfig"; sourceTree = "<group>"; };
 		951AFB87400E9ECE04E7DB5A /* Pods-assist-h5-location-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assist-h5-location-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assist-h5-location-demo/Pods-assist-h5-location-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C43B1964204D04A47DC257C0 /* Pods-assist-h5-location-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assist-h5-location-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-assist-h5-location-demo/Pods-assist-h5-location-demo.release.xcconfig"; sourceTree = "<group>"; };
 		D96AE6351DEFBD5300E465F9 /* assist-h5-location-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "assist-h5-location-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +61,16 @@
 		D96AE6591DF0391E00E465F9 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		D96AE65A1DF0391E00E465F9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		D96AE65B1DF0391E00E465F9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		D971B6BC1E23318800F726EF /* assist-h5-location-demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "assist-h5-location-demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D971B6BE1E23318900F726EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D971B6C01E23318900F726EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D971B6C31E23318900F726EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D971B6C51E23318900F726EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D971B6C81E23318900F726EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D971B6CA1E23318900F726EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D971B6CE1E2331D000F726EF /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		D971B6D91E234AC500F726EF /* JavaScriptObjInSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaScriptObjInSwift.swift; sourceTree = "<group>"; };
+		F5AB9C201EB523290F52230D /* Pods-assist-h5-location-demo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assist-h5-location-demo-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assist-h5-location-demo-swift/Pods-assist-h5-location-demo-swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D971B6B91E23318800F726EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D971B6D61E233A2C00F726EF /* JavaScriptCore.framework in Frameworks */,
+				E21863609A47466DA94304E1 /* libPods-assist-h5-location-demo-swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +100,7 @@
 			children = (
 				D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */,
 				3A9735BB4BF05D56D619B263 /* libPods-assist-h5-location-demo.a */,
+				51C20E81ACFB6CFB7F7F8778 /* libPods-assist-h5-location-demo-swift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D96AE6371DEFBD5300E465F9 /* assist-h5-location-demo */,
+				D971B6BD1E23318900F726EF /* assist-h5-location-demo-swift */,
 				D96AE6361DEFBD5300E465F9 /* Products */,
 				EE2BB79333425E699AB6AC42 /* Pods */,
 				AD3749BED28A5F0991E072ED /* Frameworks */,
@@ -84,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				D96AE6351DEFBD5300E465F9 /* assist-h5-location-demo.app */,
+				D971B6BC1E23318800F726EF /* assist-h5-location-demo-swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,11 +165,28 @@
 			path = icon;
 			sourceTree = "<group>";
 		};
+		D971B6BD1E23318900F726EF /* assist-h5-location-demo-swift */ = {
+			isa = PBXGroup;
+			children = (
+				D971B6BE1E23318900F726EF /* AppDelegate.swift */,
+				D971B6CE1E2331D000F726EF /* Swift-Bridging-Header.h */,
+				D971B6C01E23318900F726EF /* ViewController.swift */,
+				D971B6D91E234AC500F726EF /* JavaScriptObjInSwift.swift */,
+				D971B6C21E23318900F726EF /* Main.storyboard */,
+				D971B6C51E23318900F726EF /* Assets.xcassets */,
+				D971B6C71E23318900F726EF /* LaunchScreen.storyboard */,
+				D971B6CA1E23318900F726EF /* Info.plist */,
+			);
+			path = "assist-h5-location-demo-swift";
+			sourceTree = "<group>";
+		};
 		EE2BB79333425E699AB6AC42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				951AFB87400E9ECE04E7DB5A /* Pods-assist-h5-location-demo.debug.xcconfig */,
 				C43B1964204D04A47DC257C0 /* Pods-assist-h5-location-demo.release.xcconfig */,
+				F5AB9C201EB523290F52230D /* Pods-assist-h5-location-demo-swift.debug.xcconfig */,
+				60A5C210EAF916852DDCB891 /* Pods-assist-h5-location-demo-swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -160,12 +214,33 @@
 			productReference = D96AE6351DEFBD5300E465F9 /* assist-h5-location-demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D971B6BB1E23318800F726EF /* assist-h5-location-demo-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D971B6CD1E23318900F726EF /* Build configuration list for PBXNativeTarget "assist-h5-location-demo-swift" */;
+			buildPhases = (
+				A3A33528B38322C8C735F0F5 /* [CP] Check Pods Manifest.lock */,
+				D971B6B81E23318800F726EF /* Sources */,
+				D971B6B91E23318800F726EF /* Frameworks */,
+				D971B6BA1E23318800F726EF /* Resources */,
+				B792246D1FC28F538C79814E /* [CP] Embed Pods Frameworks */,
+				DDEC60E7F73726DE7A62DAB2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "assist-h5-location-demo-swift";
+			productName = "assist-h5-location-demo-swift";
+			productReference = D971B6BC1E23318800F726EF /* assist-h5-location-demo-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D96AE62D1DEFBD5300E465F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = autonavi;
 				TargetAttributes = {
@@ -178,6 +253,11 @@
 								enabled = 0;
 							};
 						};
+					};
+					D971B6BB1E23318800F726EF = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -195,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				D96AE6341DEFBD5300E465F9 /* assist-h5-location-demo */,
+				D971B6BB1E23318800F726EF /* assist-h5-location-demo-swift */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +293,21 @@
 				D96AE6451DEFBD5300E465F9 /* Assets.xcassets in Resources */,
 				D96AE65D1DF0391E00E465F9 /* icon-72@2x.png in Resources */,
 				D96AE6431DEFBD5300E465F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D971B6BA1E23318800F726EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D971B6CF1E23326200F726EF /* map.html in Resources */,
+				D971B6D01E23326200F726EF /* icon-72.png in Resources */,
+				D971B6D11E23326200F726EF /* icon-72@2x.png in Resources */,
+				D971B6D21E23326200F726EF /* icon.png in Resources */,
+				D971B6D31E23326200F726EF /* icon@2x.png in Resources */,
+				D971B6C91E23318900F726EF /* LaunchScreen.storyboard in Resources */,
+				D971B6C61E23318900F726EF /* Assets.xcassets in Resources */,
+				D971B6C41E23318900F726EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +344,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A3A33528B38322C8C735F0F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B792246D1FC28F538C79814E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-assist-h5-location-demo-swift/Pods-assist-h5-location-demo-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BFA1EB1CC1A86441DB092C4C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +389,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-assist-h5-location-demo/Pods-assist-h5-location-demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DDEC60E7F73726DE7A62DAB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-assist-h5-location-demo-swift/Pods-assist-h5-location-demo-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +415,16 @@
 				D96AE6401DEFBD5300E465F9 /* ViewController.m in Sources */,
 				D96AE63D1DEFBD5300E465F9 /* AppDelegate.m in Sources */,
 				D96AE63A1DEFBD5300E465F9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D971B6B81E23318800F726EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D971B6C11E23318900F726EF /* ViewController.swift in Sources */,
+				D971B6DA1E234AC500F726EF /* JavaScriptObjInSwift.swift in Sources */,
+				D971B6BF1E23318900F726EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +443,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				D96AE6471DEFBD5300E465F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D971B6C21E23318900F726EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D971B6C31E23318900F726EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D971B6C71E23318900F726EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D971B6C81E23318900F726EF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -420,6 +587,48 @@
 			};
 			name = Release;
 		};
+		D971B6CB1E23318900F726EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AB9C201EB523290F52230D /* Pods-assist-h5-location-demo-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "assist-h5-location-demo-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.assist-h5-location-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "./assist-h5-location-demo-swift/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D971B6CC1E23318900F726EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A5C210EAF916852DDCB891 /* Pods-assist-h5-location-demo-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "assist-h5-location-demo-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.assist-h5-location-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "./assist-h5-location-demo-swift/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -437,6 +646,15 @@
 			buildConfigurations = (
 				D96AE64D1DEFBD5300E465F9 /* Debug */,
 				D96AE64E1DEFBD5300E465F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D971B6CD1E23318900F726EF /* Build configuration list for PBXNativeTarget "assist-h5-location-demo-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D971B6CB1E23318900F726EF /* Debug */,
+				D971B6CC1E23318900F726EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

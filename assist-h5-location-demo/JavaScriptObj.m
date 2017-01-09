@@ -11,9 +11,9 @@
 
 @implementation JavaScriptObj
 
-- (void)showInfoWhenAddMarkerSuccessWithLongitude:(double )longitude andLatitude:(double)latitude{
+- (void)showInfoWhenAddMarkerSuccess{
     
-    NSLog(@"js call oc success :%f,%f",longitude,latitude);
+    NSLog(@"Js call OC success");
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"这个提示框是由JS调用OC的函数触发的，在标注点添加成功后调用" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     

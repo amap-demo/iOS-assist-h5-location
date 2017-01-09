@@ -11,7 +11,7 @@
 
 @protocol JavaScriptObjExports <JSExport>
 
-JSExportAs(showInfoWhenAddMarkerSuccess, - (void)showInfoWhenAddMarkerSuccessWithLongitude:(double )longitude andLatitude:(double)latitude);
+- (void)showInfoWhenAddMarkerSuccess;
 
 @end
 

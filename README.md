@@ -20,14 +20,15 @@
 
 ## 核心难点 ##
 
+`Objective-C`
+
 ```
-//Objective-C
 
 //配置 WebView，让OC和JS可以互调。
 - (void)configTheJSContext {
     self.context = [self.webView valueForKeyPath:(NSString *)WebViewKeyPath];
     JavaScriptObj *javaScript = [[JavaScriptObj alloc] init];  //自定义一个类来管理需要被JS调用的函数
-    self.context[(NSString *)JavaScriptCallOCObj] = javaScript;
+    self.context[(NSString *)JavaScriptCallNativeObj] = javaScript;
 }
 
 //OC调用JS，传入JS的函数名，所需参数依次组成的数组
@@ -65,8 +66,61 @@
     }];
 }
 
-//JavaScript:
 
+```
+
+`Swift`
+
+
+```
+//配置 WebView，让Swift和JS可以互调。
+func configTheJSContext() {
+    self.context = self.webView.value(forKeyPath: WebViewKeyPath) as! JSContext!
+    let javaScriptObj : JavaScriptObjInSwift = JavaScriptObjInSwift()
+    self.context.setObject(javaScriptObj, forKeyedSubscript: JavaScriptCallNativeObj as (NSCopying & NSObjectProtocol)!)
+}
+
+//Swift调用JS，传入JS的函数名，所需参数依次组成的数组
+func letNativeCallJS(with funName : String, argumentsArray : Array<Any>, in jsContext : JSContext) -> JSValue {
+    let function : JSValue = jsContext.objectForKeyedSubscript(funName)
+    let result : JSValue = function.call(withArguments: argumentsArray)
+    return result
+}
+
+//进行单次定位请求
+func startLocationAction() {
+
+    self.cleanUpAction()
+    self.loadingView.isHidden = false
+
+    self.locationManager.requestLocation(withReGeocode: false) { [weak self] (location: CLLocation?, regeocode: AMapLocationReGeocode?, error: Error?) in
+
+        self?.loadingView.isHidden = true
+
+        if let error = error {
+            let error = error as NSError
+            print("locError:{\(error.code) - \(error.localizedDescription)};")
+
+            if error.code == AMapLocationErrorCode.locateFailed.rawValue {
+            return;
+            }
+        }
+
+        //得到定位信息后，调用JS函数addMarker，需要两个参数，经度和纬度，组成数组传入，其他函数详见map.html
+        if location != nil {
+            _ =  self?.letNativeCallJS(with: "addMarker", argumentsArray: [location?.coordinate.longitude as Any,location?.coordinate.latitude as Any], in: (self?.context)!)
+        }
+
+    }
+
+}
+
+```
+
+`JavaScript`
+
+
+```
 function addMarker(longitude, latitude) {  //这个函数是留给OC调用的
     if (marker) {
         marker.setMap(null);
@@ -78,9 +132,8 @@ function addMarker(longitude, latitude) {  //这个函数是留给OC调用的
     });
     marker.setMap(map);
     map.setZoomAndCenter(14, [longitude, latitude]);
-    JavaScriptCallOCObj.showInfoWhenAddMarkerSuccess(longitude,latitude);  //JS调用OC的函数
+    JavaScriptCallNativeObj.showInfoWhenAddMarkerSuccess(); //JS调用Native的函数
 }
-
 
 ```
 
