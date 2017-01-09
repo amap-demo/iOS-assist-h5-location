@@ -33,8 +33,20 @@
 		D971B6D31E23326200F726EF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D96AE65B1DF0391E00E465F9 /* icon@2x.png */; };
 		D971B6D61E233A2C00F726EF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96AE6521DF00A9B00E465F9 /* JavaScriptCore.framework */; };
 		D971B6DA1E234AC500F726EF /* JavaScriptObjInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971B6D91E234AC500F726EF /* JavaScriptObjInSwift.swift */; };
+		D98F9BE71E23931A0040F730 /* assist_h5_location_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F9BE61E23931A0040F730 /* assist_h5_location_demoUITests.m */; };
+		D98F9BF01E2396820040F730 /* MAMapUITestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F9BEF1E2396820040F730 /* MAMapUITestHelper.m */; };
 		E21863609A47466DA94304E1 /* libPods-assist-h5-location-demo-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C20E81ACFB6CFB7F7F8778 /* libPods-assist-h5-location-demo-swift.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98F9BE91E23931A0040F730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D96AE62D1DEFBD5300E465F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96AE6341DEFBD5300E465F9;
+			remoteInfo = "assist-h5-location-demo";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A9735BB4BF05D56D619B263 /* libPods-assist-h5-location-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-assist-h5-location-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +82,11 @@
 		D971B6CA1E23318900F726EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D971B6CE1E2331D000F726EF /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		D971B6D91E234AC500F726EF /* JavaScriptObjInSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaScriptObjInSwift.swift; sourceTree = "<group>"; };
+		D98F9BE41E23931A0040F730 /* assist-h5-location-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "assist-h5-location-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98F9BE61E23931A0040F730 /* assist_h5_location_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = assist_h5_location_demoUITests.m; sourceTree = "<group>"; };
+		D98F9BE81E23931A0040F730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98F9BEE1E2396820040F730 /* MAMapUITestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMapUITestHelper.h; sourceTree = "<group>"; };
+		D98F9BEF1E2396820040F730 /* MAMapUITestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMapUITestHelper.m; sourceTree = "<group>"; };
 		F5AB9C201EB523290F52230D /* Pods-assist-h5-location-demo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assist-h5-location-demo-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assist-h5-location-demo-swift/Pods-assist-h5-location-demo-swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +109,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D98F9BE11E23931A0040F730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +134,7 @@
 			children = (
 				D96AE6371DEFBD5300E465F9 /* assist-h5-location-demo */,
 				D971B6BD1E23318900F726EF /* assist-h5-location-demo-swift */,
+				D98F9BE51E23931A0040F730 /* assist-h5-location-demoUITests */,
 				D96AE6361DEFBD5300E465F9 /* Products */,
 				EE2BB79333425E699AB6AC42 /* Pods */,
 				AD3749BED28A5F0991E072ED /* Frameworks */,
@@ -121,6 +146,7 @@
 			children = (
 				D96AE6351DEFBD5300E465F9 /* assist-h5-location-demo.app */,
 				D971B6BC1E23318800F726EF /* assist-h5-location-demo-swift.app */,
+				D98F9BE41E23931A0040F730 /* assist-h5-location-demoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +206,17 @@
 			path = "assist-h5-location-demo-swift";
 			sourceTree = "<group>";
 		};
+		D98F9BE51E23931A0040F730 /* assist-h5-location-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D98F9BE61E23931A0040F730 /* assist_h5_location_demoUITests.m */,
+				D98F9BEE1E2396820040F730 /* MAMapUITestHelper.h */,
+				D98F9BEF1E2396820040F730 /* MAMapUITestHelper.m */,
+				D98F9BE81E23931A0040F730 /* Info.plist */,
+			);
+			path = "assist-h5-location-demoUITests";
+			sourceTree = "<group>";
+		};
 		EE2BB79333425E699AB6AC42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +271,24 @@
 			productReference = D971B6BC1E23318800F726EF /* assist-h5-location-demo-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D98F9BE31E23931A0040F730 /* assist-h5-location-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98F9BED1E23931A0040F730 /* Build configuration list for PBXNativeTarget "assist-h5-location-demoUITests" */;
+			buildPhases = (
+				D98F9BE01E23931A0040F730 /* Sources */,
+				D98F9BE11E23931A0040F730 /* Frameworks */,
+				D98F9BE21E23931A0040F730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98F9BEA1E23931A0040F730 /* PBXTargetDependency */,
+			);
+			name = "assist-h5-location-demoUITests";
+			productName = "assist-h5-location-demoUITests";
+			productReference = D98F9BE41E23931A0040F730 /* assist-h5-location-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +314,12 @@
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 					};
+					D98F9BE31E23931A0040F730 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = D96AE6341DEFBD5300E465F9;
+					};
 				};
 			};
 			buildConfigurationList = D96AE6301DEFBD5300E465F9 /* Build configuration list for PBXProject "assist-h5-location-demo" */;
@@ -276,6 +337,7 @@
 			targets = (
 				D96AE6341DEFBD5300E465F9 /* assist-h5-location-demo */,
 				D971B6BB1E23318800F726EF /* assist-h5-location-demo-swift */,
+				D98F9BE31E23931A0040F730 /* assist-h5-location-demoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,6 +370,13 @@
 				D971B6C91E23318900F726EF /* LaunchScreen.storyboard in Resources */,
 				D971B6C61E23318900F726EF /* Assets.xcassets in Resources */,
 				D971B6C41E23318900F726EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98F9BE21E23931A0040F730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +497,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D98F9BE01E23931A0040F730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F9BF01E2396820040F730 /* MAMapUITestHelper.m in Sources */,
+				D98F9BE71E23931A0040F730 /* assist_h5_location_demoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98F9BEA1E23931A0040F730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96AE6341DEFBD5300E465F9 /* assist-h5-location-demo */;
+			targetProxy = D98F9BE91E23931A0040F730 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D96AE6411DEFBD5300E465F9 /* Main.storyboard */ = {
@@ -629,6 +715,38 @@
 			};
 			name = Release;
 		};
+		D98F9BEB1E23931A0040F730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "assist-h5-location-demoUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.assist-h5-location-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "assist-h5-location-demo";
+			};
+			name = Debug;
+		};
+		D98F9BEC1E23931A0040F730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "assist-h5-location-demoUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.assist-h5-location-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "assist-h5-location-demo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -658,6 +776,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D98F9BED1E23931A0040F730 /* Build configuration list for PBXNativeTarget "assist-h5-location-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98F9BEB1E23931A0040F730 /* Debug */,
+				D98F9BEC1E23931A0040F730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
